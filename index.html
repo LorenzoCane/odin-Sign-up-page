@@ -15,7 +15,16 @@
       <link href="https://fonts.googleapis.com/css2?family=Jaldi&family=Manrope:wght@400;700&display=swap" rel="stylesheet"/>
 </head>
 <body>
-   <div class="main">
+    <div class="content">
+        <div class="left">
+            <div class="leftText">
+                <h1 id="title">It will be something</h1>
+                <a href="https://unsplash.com/photos/gray-mountain-during-daytime-photo-3i5PHVp1Fkw">
+                    Photo by Massimiliano Morosinotto
+                </a>
+            </div>
+        </div>
+
         <div class="right">
             <div class="rightText" id="disclaimer">
                 <p class ="genericText" id="disclaimerText"> 
@@ -29,32 +38,71 @@
             <form action="#" spellcheck="false" autocomplete="off">
                 <div class="formInputs">
                     <div class="singleInput">
-                        <div class="hiddenError"></div>
-                        <label for=""></label><input type="text"></div>
-                    <div class="singleInput">
-                        <div class="hiddenError"></div>
-                        <label for=""></label><input type="text"></div>
-                    <div class="singleInput">
-                        <div class="hiddenError"></div>
-                        <label for=""></label><input type="text"></div>
-                    <div class="singleInput">
-                        <div class="hiddenError"></div>
-                        <label for=""></label><input type="text"></div>
-                    <div class="singleInput">
-                        <div class="hiddenError"></div>
-                        <label for=""></label><input type="text"></div>
-                    <div class="singleInput">
-                        <div class="hiddenError"></div>
-                        <label for=""></label><input type="text"></div>
-                </div>
-            </form>
-        </div>
+                        <div class="hiddenError hide">Name cannot be empty</div>
+                        <label for="name">Full Name</label>
+                        <input type="text" 
+                            id="name" 
+                            name="name" 
+                            placeholder="Full name"
+                            required
+                        />
+                    </div>
 
-        <div class="left">
-            <div>
-                <img src="" alt="logo" class="logo" id="logoImg">
-                <h1 id="title">It will be something</h1>
-            </div>
+                    <div class="singleInput">
+                        <div class="hiddenError hide">Email is not valid</div>
+                        <label for="email">Email</label>
+                        <input type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Email"
+                            required
+                        />
+                    </div>
+
+                    <div class="singleInput">
+                        <div class="hiddenError hide">Password not strong enough</div>
+                        <label for="password">Password</label>
+                        <input type="password"
+                            id="password"
+                            name="password"
+                            placeholder="Password"
+                            required
+                        />
+                        <div class="passwordIndicator hide">
+                            <span class="weak"></span>
+                            <span class="medium transparent"></span>
+                            <span class="strong transparent"></span>
+                        </div>
+                    </div>
+
+                    <div class="singleInput">
+                        <div class="hiddenError hide">Passwords do not match</div>
+                        <label for="confirm">Confirm Password</label>
+                        <input type="password"
+                            id="confirm"
+                            name="confirm"
+                            placeholder="Confirm password"
+                            required
+                        />
+                    </div>
+                </div>
+
+               
+            </form>
+
+             <small class="legal">By signing up, you agree to our
+                    <a href="#">Terms&Conditions</a>.
+                </small>
+                <div class="submitSec">
+                    <button type="submit">
+                        Sign up
+                    </button>
+                </div>
+
+                <small class="loginLink">
+                    Already an account?
+                    <a href="#">Login</a>
+                </small>
         </div>
     </div>
    
