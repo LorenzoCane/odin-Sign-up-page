@@ -16,4 +16,8 @@ Try to use customs and advance CSS features.
 
 ## Live Preview
 
-The project is not ready. A preview will be given once completed.
+Live preview [here](https://lorenzocane.github.io/odin-Sign-up-page/)
+
+## What's Next
+
+In the next months I want to implement JavaScript controls
